@@ -1,3 +1,10 @@
-console.log('Hello');
-console.log('My Name is Mohammed');
-console.log('Im a 20 ans');
+const scanf = require('scanf')
+console.log('Hello')
+console.log('My Name is Mohammed')
+console.log('Im a 20 ans')
+console.log('What about you ? ')
+console.log('whats your name : ')
+const name = scanf("%s")
+console.log('How old are you : ')
+const age = scanf("%d")
+console.log(`Your name is ${name} and your age is ${age}`)

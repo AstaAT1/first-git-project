@@ -1,0 +1,68 @@
+/**
+ * access array element ==>
+ * length of array ==>
+ * indexOf() ==>
+ * slice(start, end) ==>
+ * splice(index of element, number of elements to delete, new element) ===>
+ * push(ele) ==>
+ * pop(ele) ==>
+ * shif(ele) ==>
+ * unshift(ele) ==>
+*/
+
+
+let languages = ['javascript', 'python', 'C', 'php' ]
+console.log(languages);
+// console.table(languages)
+
+//* how to access a specific element in array 
+console.log(languages[2]);
+
+//* length of array ==> chh7al mn element kayn f l array
+
+console.log(languages.length);
+
+//* returns the index of element OR returns -1 ila l'element makaynch f l array
+console.log(languages.indexOf('english'));
+
+//* kat9ata3 array mn element start ==> end not included => returns new array of sliced elements 
+// console.log(languages.slice(0, 3)); // 1, 2 
+
+
+//! all these methods chnages the original array 
+
+//* removes element from an array (index, count, itme1, itme2)
+
+let array = [0, 1, 2, 3, 4] 
+console.log("before splice " + array);
+
+array.splice(0, 2, 6, 7);
+console.log("after splice "  + array);
+
+  
+//* add elements to the end of array  and returns the new length of array
+
+array.push(10);
+array.push(20)
+console.log(array.push(30));
+
+console.log(array);
+
+//* removes element from the ened of an array AND returns the removed element
+array.pop()
+console.log(array.pop());
+
+console.log(array);
+
+//* adds element to the begining of array AND returns new length of element
+array.unshift('hi')
+console.log(array.unshift('hello'));
+
+console.log(array);
+
+//* removes element from the begining of an array AND returns the removed element
+
+array.shift()
+console.log(array.shift());
+
+console.log(array);
